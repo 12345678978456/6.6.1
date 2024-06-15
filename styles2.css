@@ -1,0 +1,79 @@
+/* styles.css */  
+#navbar {  
+    background-color: #f8f9fa; /* 可选：为整个导航栏设置背景色 */  
+    padding: 10px;  
+}  
+  
+#navbar ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    justify-content: space-around;  
+}  
+  
+.nav-link {  
+    display: inline-block;  
+    padding: 10px 20px; /* 添加内边距以创建背景框 */  
+    background-color: #ddd; /* 设置背景色 */  
+    color: #333;  
+    text-decoration: none;  
+    margin-right: 5px; /* 可选：链接之间添加一些间隔 */  
+    transition: background-color 0.3s ease; /* 添加过渡效果，使背景色变化更平滑 */  
+}  
+  
+.nav-link:hover { /* 链接悬停时改变背景色 */  
+    background-color: #007bff;  
+    color: #fff;  
+}  
+  
+/* 初始高亮样式（可选） */  
+.nav-link.active {  
+    background-color: #007bff;  
+    color: #fff;  
+}
+/* 设置图片横幅样式 */  
+.activity-banner img {  
+    width: 100%; /* 使得图片宽度与包含它的div元素宽度一致 */  
+    height: auto; /* 保持图片的原始宽高比 */  
+}
+/* styles.css */  
+  
+.activity-banner {  
+    position: relative; /* 允许子元素绝对定位 */  
+    /* 其他样式 */  
+}
+#buttons .imageBtn {  
+    /* 初始样式：小的偏透明框 */  
+    padding: 5px 10px;  
+    margin: 0 5px;  
+    border: none;  
+    background-color: rgba(0, 0, 0, 0.5); /* 灰色半透明背景 */  
+    color: white; /* 文字颜色 */  
+    cursor: pointer;  
+    transition: opacity 0.3s ease, transform 0.3s ease; /* 平滑过渡效果 */  
+}  
+  
+#buttons .imageBtn.active {  
+    /* 选中样式：宽的透明度上升的框 */  
+    padding: 10px 20px;  
+    opacity: 1; /* 完全不透明 */  
+    transform: scale(1.1); /* 稍微放大 */  
+}
+#buttonss {  
+    /* 保持原有的样式 */  
+    position: absolute;  
+    bottom: 10px;  
+    width: 100%;  
+    text-align: center;  
+    /* 可以添加其他样式，如按钮间距等 */  
+}
+#title {  
+    position: absolute;  
+    top: 1750px;  
+    left: 50%;  
+    transform: translateX(-50%);  
+    font-size: 32px; /* 调整为你想要的字体大小 */  
+    color: white; /* 假设背景是深色图片 */  
+    /* 可以添加其他样式 */  
+}

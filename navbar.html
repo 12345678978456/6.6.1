@@ -1,0 +1,172 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>头部导航栏</title>    
+    <link rel="stylesheet" href="styles.css">    
+</head>    
+<body>    
+    <nav id="navbar">    
+        <ul>    
+            <li id="logo">  
+                <a href="#"><img src="file:///E:/github/6.6.1/image/logo.webp" alt="网站Logo"></a>  
+            </li>  
+        </div>
+        <li><a href="shouye.html" class="nav-link" id="home">首页</a></li>  
+        <li><a href="navbar.html" class="nav-link" id="events">活动展示</a></li>  
+        <li><a href="wj/zhanshang.html" class="nav-link" id="exhibitors">展商展览</a></li>  
+        <li><a href="wj/xiazai.html" class="nav-link" id="downloads">资料下载</a></li>  
+        <li><a href="wj/dahui.html" class="nav-link" id="guide">大会指南</a></li>  
+        <li><a href="#" class="nav-link" id="live">大会直播</a></li>  
+        <li><a href="denglu.html" class="nav-link" id="login">登陆</a></li> 
+        <li><a href="zhuce.html" class="nav-link" id="login">注册</a></li>  
+        </ul>    
+    </nav>    
+    <!-- 添加图片 -->    
+    <div id="banner" class="activity-banner">    
+        <img src="file:///E:/github/6.6.1/image/activity_banner.webp" alt="活动横幅">    
+        <div class="banner-text">    
+            <h1>精彩活动</h1>      
+        </div>   
+    </div>    
+  
+<!-- 选项卡容器 -->  
+<div id="tab-container" class="blurred-box">  
+    <!-- 选项卡头部 -->  
+    <div id="tab-header">  
+        <button class="tab-link" data-tab="all" id="all-tab">全部</button>  
+        <button class="tab-link" data-tab="digital" id="digital-tab">数字成果展</button>  
+        <button class="tab-link" data-tab="new-products" id="new-products-tab">新品发布</button>  
+        <a href="#" class="admin-btn" onclick="toggleAdminPanel()">管理员入口</a> 
+        <!-- ...其他选项卡... -->  
+        <div id="admin-panel" style="display: none;">  
+            <h2>管理员面板</h2>  
+            <button onclick="addEvent()">添加活动</button> 
+            <button onclick="saveEvents()">保存活动</button> <!-- 新增保存按钮 -->
+            <!-- 假设我们有一个显示活动列表的地方，可以点击来编辑或删除 -->  
+            <div id="admin-event-list">  
+                <!-- 这里会动态添加活动项，每个活动项包含编辑和删除按钮 -->  
+            </div>  
+            <button onclick="exitAdminPanel()">退出管理员面板</button>  
+        </div>  
+          
+        <div id="tab-content">  
+            <!-- ...其他内容... -->  
+            <div id="event-list">  
+                <!-- 活动列表将在这里动态生成（面向用户展示） -->  
+            </div>  
+        </div>
+    </div> 
+
+    <!-- 在.box-content或类似的位置添加管理员按钮 -->  
+    <!-- 选项卡内容区域（默认显示“全部”内容） -->  
+    <div id="tab-content">  
+        <div id="all-content" class="tab-pane active">  
+            <div class="outer-box">  
+                <div class="box">  
+                    <div class="box-content">  
+                        <h2>数据安全创新实践案例册</h2>  
+                        <p class="subtitle">第七届数据安全创新实践案例册,立即下载</p>   
+                        <p class="date">日期: 2023-04-01</p>  
+                        <div class="links">  
+                            <a href="diyige.html" class="learn-more">了解详情</a>  
+                            <a href="baoming1.html" id="enrollBtn1" class="download-btn" onclick="checkEnrollment(event,'btn1')">报名</a> 
+                        </div>  
+                    </div>  
+                    <div class="box-image">  
+                        <a href="diyige.html">  
+                            <img src="image/127.png" alt="图片描述" class="zoomable-image">  
+                        </a>  
+                    </div>  
+                </div>  
+            </div>
+            <div class="outer-box">  
+                <div class="box box-right">  
+                    <div class="boxx-image">  
+                        <a href="dierge.html">  
+                            <img src="image/124.png" alt="图片描述" class="zoomable-images">  
+                        </a>  
+                    </div> 
+                    <div class="boxx-content">  
+                        <h2>经典实践案例展</h2>  
+                        <p class="subtitle"> 连续六年，60余个具备示范效益的优秀案例，权威评定，行业领先</p>   
+                        <p class="date">日期: 2023-04-02</p>  
+                        <div class="links">  
+                            <a href="dierge.html" class="learn-more">了解详情</a>  
+                            <a href="baoming2.html" id="enrollBtn2" class="download-btn" onclick="checkEnrollment(event,'btn2')">报名</a> 
+                        </div>  
+                    </div>  
+                     
+                </div>  
+            </div>
+            <div class="outer-box">  
+                <div class="box">  
+                    <div class="box-content">  
+                        <h2>2024西湖论剑大会举办，数据安全创新实践案例集发布</h2>  
+                        <p class="subtitle"> 与西湖论剑·数字安全大会共同迈入第十二年的是什么样的力量？今天，我们一起来解读</p>   
+                        <p class="date">日期: 2023-04-03</p>  
+                        <div class="links">  
+                            <a href="disange.html" class="learn-more">了解详情</a>  
+                            <a href="baoming3.html" id="enrollBtn3" class="download-btn" onclick="checkEnrollment(event,'btn3')">报名</a>
+                        </div>  
+                    </div>  
+                    <div class="box-image">  
+                        <a href="disange.html">  
+                            <img src="image/125.png" alt="图片描述" class="zoomable-image">  
+                        </a>  
+                    </div>  
+                </div>  
+            </div>
+        </div>
+        
+        <div id="digital-content" class="tab-pane">  
+            <!-- “数字成果展”内容 -->   
+            <div class="outer-box">  
+                <div class="box">  
+                    <div class="box-content">  
+                        <h2>2024西湖论剑大会举办，数据安全创新实践案例集发布</h2>  
+                        <p class="subtitle"> 与西湖论剑·数字安全大会共同迈入第十二年的是什么样的力量？今天，我们一起来解读</p>   
+                        <p class="date">日期: 2023-04-03</p>  
+                        <div class="links">  
+                            <a href="disange.html" class="learn-more">了解详情</a>  
+                            <a href="disange.html" class="download-btn">下载</a>  
+                        </div>  
+                    </div>  
+                    <div class="box-image">  
+                        <a href="disange.html">  
+                            <img src="image/125.png" alt="图片描述" class="zoomable-image">  
+                        </a>  
+                    </div>  
+                </div>  
+            </div>
+        </div>  
+        <div id="new-products-content" class="tab-pane">  
+            <!-- “新品发布”内容 -->  
+            <div class="outer-box">  
+                <div class="box box-right">  
+                    <div class="boxx-image">  
+                        <a href="dierge.html">  
+                            <img src="image/124.png" alt="图片描述" class="zoomable-images">  
+                        </a>  
+                    </div> 
+                    <div class="boxx-content">  
+                        <h2>经典实践案例展</h2>  
+                        <p class="subtitle"> 连续六年，60余个具备示范效益的优秀案例，权威评定，行业领先</p>   
+                        <p class="date">日期: 2023-04-02</p>  
+                        <div class="links">  
+                            <a href="dierge.html" class="learn-more">了解详情</a>  
+                            <a href="dierge.html" class="download-btn">下载</a>  
+                        </div>  
+                    </div>  
+                     
+                </div>  
+            </div>
+        </div>  
+        <!-- ...其他内容区域... -->  
+    </div>  
+</div>  
+    <script src="script.js"></script>    
+</body>    
+</html>

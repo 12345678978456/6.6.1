@@ -1,0 +1,85 @@
+/* styles.css */  
+#navbar {  
+    background-color: #f8f9fa; /* 可选：为整个导航栏设置背景色 */  
+    padding: 10px;  
+}  
+  
+#navbar ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    justify-content: space-around;  
+}  
+  
+.nav-link {  
+    display: inline-block;  
+    padding: 10px 20px; /* 添加内边距以创建背景框 */  
+    background-color: #ddd; /* 设置背景色 */  
+    color: #333;  
+    text-decoration: none;  
+    margin-right: 5px; /* 可选：链接之间添加一些间隔 */  
+    transition: background-color 0.3s ease; /* 添加过渡效果，使背景色变化更平滑 */  
+}  
+  
+.nav-link:hover { /* 链接悬停时改变背景色 */  
+    background-color: #007bff;  
+    color: #fff;  
+}  
+  
+/* 初始高亮样式（可选） */  
+.nav-link.active {  
+    background-color: #007bff;  
+    color: #fff;  
+}
+/* 设置图片横幅样式 */  
+.activity-banner img {  
+    width: 100%; /* 使得图片宽度与包含它的div元素宽度一致 */  
+    height: auto; /* 保持图片的原始宽高比 */  
+}
+/* styles.css */  
+  
+.activity-banner {  
+    position: relative; /* 允许子元素绝对定位 */  
+    /* 其他样式 */  
+}
+/* 图片容器样式 */  
+.image-container {  
+    text-align: center; /* 居中图片 */  
+    margin-bottom: 10px; /* 图片之间添加一些间距 */  
+}  
+
+/* 第一张图片上方文字样式 */  
+.title-over-image {  
+    position: absolute;  
+    top: 20%; /* 垂直居中 */  
+    left: 20%; /* 水平居中 */  
+    transform: translate(-50%, -50%); /* 调整位置 */  
+    color: white; /* 文字颜色 */  
+    font-size: 24px; /* 文字大小 */  
+    font-weight: bold; /* 文字加粗 */  
+    pointer-events: none; /* 防止文字阻挡点击事件 */  
+}  
+.image-container img {    
+    max-width: 50%; /* 图片宽度为其容器宽度的50% */  
+    height: auto; /* 图片高度自动以保持宽高比 */  
+}
+/* 响应式布局，根据屏幕大小调整 */    
+@media (min-width: 601px) {      
+    .image-list {      
+        display: flex;  
+        flex-direction: row; /* 水平排列 */    
+        justify-content: space-around; /* 图片左右留出空间，图片之间也有空间 */    
+    }    
+        
+    .image-container + .image-container {      
+        margin-top: 0; /* 取消垂直间距，因为现在是水平排列 */    
+        margin-left: 10px; /* 添加水平间距 */    
+        
+    }    
+}
+.kuai {  
+    height: 200px; /* 设置你想要的高度 */  
+    background-color: #ffffff; /* 设置背景颜色以便于可视化 */  
+    /* 可以添加其他样式，如边框、内边距等 */  
+}

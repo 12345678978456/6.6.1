@@ -1,0 +1,45 @@
+/* 样式化活动报名模块 */  
+#event-registration {  
+    margin-top: 20px; /* 与导航栏保持一定间距 */  
+    padding: 20px;  
+    background-color: #f4f4f4; /* 浅灰色背景 */  
+    border-radius: 5px; /* 圆角 */  
+}  
+  
+#event-registration h2 {  
+    text-align: center;  
+    margin-bottom: 20px;  
+}  
+  
+#registration-form {  
+    max-width: 600px; /* 限制表单宽度 */  
+    margin: 0 auto; /* 水平居中 */  
+}  
+  
+#registration-form label {  
+    display: block;  
+    margin-bottom: 5px;  
+}  
+  
+#registration-form input[type="text"],  
+#registration-form input[type="email"],  
+#registration-form input[type="tel"] {  
+    width: 100%;  
+    padding: 10px;  
+    margin-bottom: 15px;  
+    border-radius: 3px;  
+    border: 1px solid #ccc;  
+}  
+  
+#registration-form button {  
+    padding: 10px 20px;  
+    background-color: #4CAF50; /* 绿色背景 */  
+    color: white;  
+    border: none;  
+    border-radius: 3px;  
+    cursor: pointer;  
+}  
+  
+#registration-form button:hover {  
+    background-color: #45a049; /* 稍微深一点的绿色背景，用于鼠标悬停效果 */  
+}

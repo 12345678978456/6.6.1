@@ -15,7 +15,7 @@
 .nav-link {  
     display: inline-block;  
     padding: 10px 20px; /* 添加内边距以创建背景框 */  
-    background-color: #ddd; /* 设置背景色 */  
+    background-color: rgb(255, 255, 255); /* 设置背景色 */  
     color: #333;  
     text-decoration: none;  
     margin-right: 5px; /* 可选：链接之间添加一些间隔 */  
